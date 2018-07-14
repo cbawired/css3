@@ -1,0 +1,170 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: #5b7989;
+    color: white;
+    text-shadow: 2px #02010a;
+    border-radius: 10px 10px 0px 0px;
+    padding: 2%;
+    animation: slidein 3s;
+    
+}
+
+h2{
+    display: inline;
+}
+
+nav{
+    display: inline;
+    float: right;
+    margin-right: 2%;
+
+}
+nav ul{
+    display: inline;
+}
+nav ul li{
+    display: inline;
+}
+
+#principal{
+    width: 90%;
+    margin-left: 5%;
+    background-color: #82c3a6;
+}
+#secundaria{
+    width: 90%;
+    margin-left: 5%;
+    background-color: #d5c75f;
+    border: 1px solid;
+}
+.secundaria-uno:hover{
+   
+    border: 2px solid;
+    animation: rotacion 2s;
+   
+    
+}
+.secundaria-dos:hover{
+    border: 2px solid;
+    animation: desplazamiento 2s;
+
+}
+
+@-webkit-keyframes rotacion{
+    0%{
+
+    }
+    100%{
+        transform: rotate(10deg);
+        -webkit-filter: drop-shadow(5px 5px 5px #82c3a6);
+        filter: drop-shadow(5px 5px 5px #82c3a6);
+        
+    }
+}
+
+@-webkit-keyframes desplazamiento{
+    0%{}
+    100%{
+        transform: translate(20px, -5px);
+        -webkit-filter: drop-shadow(5px 5px 5px #82c3a6);
+        filter: drop-shadow(5px 5px 5px #82c3a6);
+    }
+}
+
+@-webkit-keyframes slidein{
+    0%{
+        margin-top: 150%;
+    }
+    60%{
+        margin-top: -5%;
+    }
+    100%{
+        margin-top: 0%;
+    }
+}
+
+
+#contenedor{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-left: 2%;
+    background-color: #d5c75f;
+}
+.contenido{
+    width: 30%;
+    padding: 1%;
+    
+}
+.contenido img{
+    width: 100%;
+}
+
+#imagen1{
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+}
+
+#imagen2, #imagen4, #imagen6{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+#imagen3{
+    -webkit-filter: sepia(90%);
+    filter: sepia(100%);
+}
+
+
+
+
+footer{
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    background-color: #C6d5c5;
+    
+}
+footer div {
+    width: 25%;
+    border-radius: 10px;
+    padding: 1%;
+
+}
+
+@media screen{}
+
+@media (max-width:420px){
+    nav{
+        margin-right: 2%;
+        float:none;
+    }
+    #contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+    .contenido{
+        width: 100%;
+    }
+    .contenido img{
+        width: 94%;
+    }
+    footer{
+        width: 100%;
+        padding: 1%;
+        display: flex;
+        flex-direction: column;
+        background-color: #C6d5c5;
+    }
+    footer div {
+        width: 90%;
+        margin-left: 5%;
+        border-radius: 10px;
+        padding: 1%;
+    
+    }
+}
